@@ -4,23 +4,27 @@
 #include <iomanip>
 #include <random>
 
-__deprecated
-static std::string dateFormat(int s) {
+struct time_s {
+    int h;
+    int m;
+    int s;
+};
+
+time_s toTime(int s) {
+    time_s t1{};
+    t1.h = s / 3600;
+    t1.m = s / 60 - t1.h;
+    t1.s = s - t1.m * 60 - t1.h * 3600;
+    return t1;
+}
+
+static std::string time_sFormat(time_s t) {
     std::stringstream ss;
-    int h = 0, m = 0;
-    while (s > 60 * 60) {
-        h++;
-        s -= 60 * 60;
-    }
-    while (s > 60) {
-        m++;
-        s -= 60;
-    }
-    if (h > 0)
-        ss << h << " heure" << (h > 1 ? "s et " : " et ");
-    if (m > 0)
-        ss << m << " minute" << (m > 1 ? "s et " : " et ");
-    ss << s << " seconde" << (s > 1 ? "s." : ".");
+    if (t.h > 0)
+        ss << t.h << " heure" << (t.h > 1 ? "s et " : " et ");
+    if (t.m > 0)
+        ss << t.m << " minute" << (t.m > 1 ? "s et " : " et ");
+    ss << t.s << " seconde" << (t.s > 1 ? "s." : ".");
     return ss.str();
 }
 
@@ -54,7 +58,7 @@ int main() {
                     std::cout << "CONSOLE » Moins!" << std::endl;
                 else {
                     std::cout << "CONSOLE » GAGNEZ!" << std::endl;
-                    std::cout << "CONSOLE » Vous avez mis " << dateFormat(std::difftime(time(nullptr), t)) << std::endl;
+                    std::cout << "CONSOLE » Vous avez mis " << time_sFormat(toTime(std::difftime(time(nullptr), t))) << std::endl;
                     std::cout << "CONSOLE » En " << tr << " coup" << (tr > 1 ? "s." : ".") << std::endl;
                     find = true;
                 }
