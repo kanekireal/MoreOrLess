@@ -1,4 +1,4 @@
-[version]: https://img.shields.io/badge/Download-v1.0.0-blue.svg
+[version]: https://img.shields.io/badge/Download-v1.0.1-blue.svg
 [download]: https://github.com/kanekireal/MoreOrLess/releases/latest
 [license]: https://img.shields.io/badge/License-Apache%202.0-lightgrey.svg
 [changelog]: https://img.shields.io/badge/Changelog-v1.0.0-brightgreen.svg
