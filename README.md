@@ -1,10 +1,12 @@
 [version]: https://img.shields.io/badge/Download-v1.0.1-blue.svg
 [download]: https://github.com/kanekireal/MoreOrLess/releases/latest
 [license]: https://img.shields.io/badge/License-Apache%202.0-lightgrey.svg
-[changelog]: https://img.shields.io/badge/Changelog-v1.0.0-brightgreen.svg
+[changelog]: https://img.shields.io/badge/Changelog-View-brightgreen.svg
+[versioning]: https://img.shields.io/badge/Versioning-View-ff69b4.svg
 [ ![version][] ][download]
 [ ![license][] ](https://github.com/kanekireal/MoreOrLess/blob/master/LICENSE.md)
 [ ![changelog][] ](https://github.com/kanekireal/MoreOrLess/blob/master/CHANGELOG.md)
+[ ![versioning][] ](http://semver.org/)
 
 # MoreOrLess C++ 
 
@@ -15,14 +17,6 @@ Configuration soon...
 
 * [CLion](https://www.jetbrains.com/clion/) - IDE
 * [Boost](https://www.boost.org) - The Boost C++ library
-
-## Changelog
-
-View [Changelog](https://github.com/kanekireal/MoreOrLess/blob/master/CHANGELOG.md).
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning.
 
 ## Authors
 
