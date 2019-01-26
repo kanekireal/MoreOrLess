@@ -11,11 +11,12 @@
 # MoreOrLess C++ 
 
 MoreOrLess is an mini-game.
+With 2 languages (French and English) [More soon...].
 Configuration soon...
 
 ## Built With
 
-* [CLion](https://www.jetbrains.com/clion/) - IDE
+* [Xcode](https://developer.apple.com/xcode/) - IDE
 * [Boost](https://www.boost.org) - The Boost C++ library
 
 ## Authors
